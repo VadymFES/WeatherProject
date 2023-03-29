@@ -9,7 +9,7 @@ A simple weather app that displays the temperature and weather description for a
 2. Install the required dependencies by running the following command in the project directory:
         ``` npm install ```
 3. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/) by signing up for a free account.
-4. Replace your_api_key_here in app.js with your API key.
+4. Replace ```your_api_key_here``` in ```app.js``` with your API key.
         ``` const apiKey = "your_api_key_here" ```
  
  ## Usage

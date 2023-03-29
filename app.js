@@ -25,7 +25,7 @@ app.post("/", function(req, res){
     // Extract City name entered by the user from request body received 
     const query = req.body.cityName; 
     
-    const apiKey = "13449e82a2aeb10b22d3a62d2a00bd49"; // Unique API Key obtained after sign up with api-provider 
+    const apiKey = "your_api_key_here"; // Unique API Key obtained after sign up with api-provider 
     const unit = "metric"; // Set units of measurement for temperature to be Celsius 
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=" + unit + "&appid=" + apiKey; // API Endpoint to get Weather Details  
 

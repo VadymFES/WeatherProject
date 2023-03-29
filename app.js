@@ -5,7 +5,12 @@ const bodyParser = require ("body-parser") // To parse post request body
 
 const app = express(); // Create an instance of express 
 
-app.use(bodyParser.urlencoded({exteded: true})); // Support URL-encoded bodies when parsing post requests 
+// Serve static files from the "public" directory
+app.use(express.static("public"));
+
+app.use(bodyParser.urlencoded({extended: true})); // Support URL-encoded bodies when parsing post requests 
+
+
 
 // Defines route-handler to handle GET request for root (/) route  
 app.get("/", function(req, res){
